@@ -1998,7 +1998,6 @@ nṃtos = Biegen
 nṇkskai = finden
 nocējō = ablegen
 nócodos = nackt
-
 nōdos = Knoten
 noibhos = heilig
 nōinos = none
