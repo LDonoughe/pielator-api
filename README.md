@@ -1,24 +1,26 @@
-# README
+# Pielator API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
+Translation API for Proto-Indo-European (PIE)
 
-Things you may want to cover:
+## Setup
+install asdf plugins for postgres, nodejs, ruby
 
-* Ruby version
+install yarn
 
-* System dependencies
+```
+asdf install
+createdb `whoami`
+bundle
+rails db:setup
+```
 
-* Configuration
+## Run
+to run server:
+`rails server`
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Sources and Resources:
+https://academiaprisca.org/en/resources/flexie-a-conjugator-of-modern-indo-european-verbs/
+https://academiaprisca.org/en/resources/a-grammar-of-modern-indo-european/
+https://indo-european.info/dictionary-translator/list.inc.php/Indo-European/English/0/
+https://indogermanisch.org/woerterbuch-uebersetzer/list.inc.php/Indogermanisch/Deutsch/0/
