@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   scope :api do
     scope :v1 do
       resources :words, only: :index
+      get '/status', to: 'status#show'
     end
   end
 
