@@ -19,6 +19,14 @@ rails db:setup
 to run server:
 `rails server`
 
+# Running via Docker
+For secure db credentials, please create `production.env` with `RAILS_ENV`, `PIELATOR_DB_USERNAME`, and `PIELATOR_DB_PASSWORD`
+To setup:
+`docker-compose up`
+
+To stop:
+`docker-compose down`
+
 ## Sources and Resources:
 https://academiaprisca.org/en/resources/flexie-a-conjugator-of-modern-indo-european-verbs/
 https://academiaprisca.org/en/resources/a-grammar-of-modern-indo-european/
