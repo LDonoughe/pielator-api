@@ -5,8 +5,10 @@ services:
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
     environment:
-      POSTGRES_USERNAME: ${PIELATOR_DB_USERNAME}
-      POSTGRES_PASSWORD: ${PIELATOR_DB_PASSWORD}
+      # Username must correspond to a user in /etc/passwd
+      # https://github.com/docker-library/docs/blob/master/postgres/README.md
+      - 'POSTGRES_USERNAME=${PIELATOR_DB_USERNAME}'
+      - 'POSTGRES_PASSWORD=${PIELATOR_DB_PASSWORD}'
   web:
     build: .
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"

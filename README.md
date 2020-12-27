@@ -4,7 +4,17 @@
 Translation API for Proto-Indo-European (PIE)
 
 ## Setup
-install asdf plugins for postgres, nodejs, ruby
+install asdf plugins for postgres, nodejs, ruby if you haven't already:
+```
+# You will need to already have zlib, readline, and make installed
+asdf plugin-add postgres
+asdf plugin-add ruby
+asdf plugin-add nodejs
+```
+additional step for nodejs installation: https://github.com/asdf-vm/asdf-nodejs
+```
+bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
+```
 
 install yarn
 

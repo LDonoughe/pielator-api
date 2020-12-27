@@ -10,7 +10,6 @@ development:
   <<: *default
   database: pielator_development
 
-
 test:
   <<: *default
   database: pielator_test
